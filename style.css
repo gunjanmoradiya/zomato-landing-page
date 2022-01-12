@@ -7,6 +7,25 @@ body{
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
+.button_primary{
+    background-image: linear-gradient(to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+color: #fff;
+border: none;
+padding: 12px;
+border-radius: 6px;
+cursor: pointer;
+}
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -41,14 +60,50 @@ border: 2px solid blue;
         justify-content: space-between;
       padding:2px 30px ;
     }
-    
+    .hero_container{
+        margin: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
 @media(min-width: 1020px){
+    .container{
+        max-width: 900px;
+    }
     .navbar_brand{
         width: 150px;
     }
-    .nav_iteam{
+    .button_primary{
         padding: 20px;
         font-size: 20px;
+    }
+    .hero_discription{
+        width: 100%;
+    }
+    .hero_text{
+        font-size: 50px;
+    }
+    
+}
+.hero_image_container{
+    width: 100%;
+}
+.hero_image{
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0,0, 0.25);
+}
+.hero_text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+@media (min-width: 1366px)
+{
+    .container{
+        max-width: 1200px;
+    }
+    .hero_text{
+        font-size: 50px;
     }
 }
