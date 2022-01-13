@@ -55,21 +55,93 @@ cursor: pointer;
 border: 2px solid blue;
 }
 
+.hero_image_container{
+    width: 100%;
+}
+.hero_image{
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0,0, 0.25);
+}
+.hero_text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.food_image{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.food_card_image_container{
+    width: 100%;
+
+}
+.food_card{
+    background-color: #fff;
+    border-radius: 25px;
+    margin-bottom: 15px;
+
+}
+.food_card_discription{
+    padding: 12px;
+}
+.explore_menu_text{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
 @media  (min-width:768px) {
     .navbar{
         justify-content: space-between;
       padding:2px 30px ;
     }
     .hero_container{
-        margin: 20px;
+        margin: 35px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
+    .explore_menu_lists{
+        margin-top: 50px;
+        display: flex;
+        gap: 10px;
+        padding: 0 30PX;
+        
+    }
+    #pizza_card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .explore_menu_view_more{
+        display: flex;
+        justify-content: center;
+    }
+    .explore_menu_container{
+     margin: 30px;
+        position: relative;
+    }
+    .explore_menu_gradient_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+    transform: skewY(-5deg);
+    z-index: -3;
+    }
+    
+    
 }
-@media(min-width: 1020px){
+@media(min-width: 1366px){
     .container{
-        max-width: 900px;
+        max-width: 1200px;
     }
     .navbar_brand{
         width: 150px;
@@ -84,26 +156,10 @@ border: 2px solid blue;
     .hero_text{
         font-size: 50px;
     }
-    
-}
-.hero_image_container{
-    width: 100%;
-}
-.hero_image{
-    border-radius: 8px;
-    width: 100%;
-    box-shadow: 0 25px 50px -12px rgba(0, 0,0, 0.25);
-}
-.hero_text{
-    font-size: 30px;
-    margin: 20px 0;
-}
-@media (min-width: 1366px)
-{
-    .container{
-        max-width: 1200px;
+    .explore_menu_lists{
+        gap: 40px;
     }
-    .hero_text{
+    .explore_menu_text{
         font-size: 50px;
     }
 }
