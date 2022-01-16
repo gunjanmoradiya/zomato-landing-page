@@ -90,8 +90,41 @@ border: 2px solid blue;
     margin-bottom: 25px;
     text-align: center;
 }
+/*flexxxxxxx*/
+.resturant_images_container{
+    width: 100%;
+    
+}
+.resturant_text{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
 
+}
+.resturant_images_row_one,.resturant_images_row_two{
+    width: 100%;
+    display: flex;
+    gap: 3px;
+    
+}
+.resturant_images_row_one
+{
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+.resturant_image_1,.resturant_image_4{
+    width: 70%;
+}
+.resturant_image_2,.resturant_image_3{
+width: 140%;
+height: 300px;
+}
 
+.resturan_1,.resturan_2,.resturan_3,.resturan_4{
+    width: 100%;
+}
+}
 @media  (min-width:768px) {
     .navbar{
         justify-content: space-between;
@@ -135,6 +168,14 @@ border: 2px solid blue;
     );
     transform: skewY(-5deg);
     z-index: -3;
+    }
+    .resturant_container{
+    display: flex;
+    align-items: center;
+    }
+    .resturant_text{
+        width: 100%;
+        font-size: 40px;
     }
     
     
